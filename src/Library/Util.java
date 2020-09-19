@@ -9,9 +9,7 @@ public class Util {
         System.out.println(c*6);
     }
 
-
     // import Library.Util;
-
     public static String removeDup(String str){
         String nonDup = "";
 
@@ -82,10 +80,6 @@ public class Util {
         return fullName;
     }
     // formats the full name
-
-
-
-
 
     public static int maxNum(int[] arr){
         int max = arr[0];
@@ -528,7 +522,15 @@ public class Util {
     }
     // combines two array and returns it
 
+    public static void sleep(int seconds) {
+        try {
 
+            Thread.sleep( seconds * 1000 );
 
+        } catch (InterruptedException e) {
+
+        }
+
+    }
 
 }
