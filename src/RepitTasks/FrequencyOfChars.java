@@ -116,6 +116,7 @@ public class FrequencyOfChars {
             number /= 10;
         }
         return sum;
+
     }
 
 
