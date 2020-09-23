@@ -1,5 +1,7 @@
 package RepitTasks;
 
+import java.util.Arrays;
+
 public class FrequencyOfChars {
 
     public static void main(String[] args) {
@@ -66,7 +68,55 @@ public class FrequencyOfChars {
 
         System.out.println(result); //A3B4C6D7E14
 
+        System.out.println("same(abcd=dcba) " + same("abcd", "dcba"));
+
+        System.out.println("the sum of the digits in number 129 is "+sumOfDigits(129));
+    }
+
+    public static boolean same(String a, String b) {
+
+        char[] ch1 = a.toCharArray();
+
+        char[]  ch2 = b.toCharArray();
+
+        Arrays.sort(ch1);
+
+        Arrays.sort(ch2);
+
+        String a1="", a2="";
+
+        for(char each: ch1)
+
+            a1 +=each;
+
+
+
+        for(char each: ch2)
+
+            a2 +=each;
+
+
+
+        return  a1.equals(a2) ;
 
 
     }
+
+    public static int sumOfDigits(int number){
+        if(number < 10){
+            return -1;
+        }
+
+        int sum = 0;
+
+        while(number > 0){
+            int digit = number % 10;
+            sum += digit;
+
+            number /= 10;
+        }
+        return sum;
+    }
+
+
 }
