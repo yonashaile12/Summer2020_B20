@@ -29,6 +29,10 @@ public class Iphone extends Phone implements Downloadable, AppleApp{
         System.out.println("Iphone is calling "+phoneNumber);
     }
 
+    public void faceTiming(long phoneNUmber){
+        System.out.println("Iphone Is factiming");
+    }
+
     @Override
     public String toString() {
         return "Iphone{" +
