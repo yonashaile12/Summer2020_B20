@@ -1,6 +1,7 @@
 package RepitTasks;
 
 import java.util.Arrays;
+import java.util.Scanner;
 
 public class FrequencyOfChars {
 
@@ -71,7 +72,27 @@ public class FrequencyOfChars {
         System.out.println("same(abcd=dcba) " + same("abcd", "dcba"));
 
         System.out.println("the sum of the digits in number 129 is "+sumOfDigits(129));
+
+
+        int[][] arr2D = {{1,2,3},{4,5,6,7},{8,9,10,11}};
+        int max = arr2D[0][0];
+
+        for(int i = 0; i <= arr2D.length-1; i++){
+            int[] eachArray = arr2D[i];
+
+            for(int j = 0; j <= eachArray.length-1; j++){
+                int eachElement = eachArray[j];
+
+                if(eachElement > max){
+                    max = eachElement;
+                }
+            }
+        }
+        System.out.println(max);
+
     }
+
+
 
     public static boolean same(String a, String b) {
 
@@ -119,5 +140,68 @@ public class FrequencyOfChars {
 
     }
 
+    public static void printNumberInWord(int number){
+        switch(number){
+            case 0:
+                if(number == 0);
+                System.out.println("ZERO");
+            case 1:
+                if(number == 1);
+                System.out.println("ONE");
+            case 2:
+                if(number == 2);
+                System.out.println("TWO");
+
+            case 3:
+                if(number == 3);
+                System.out.println("THREE");
+            case 4:
+                if(number == 4);
+                System.out.println("FOUR");
+            case 5:
+                if(number == 5);
+                System.out.println("FIVE");
+            case 6:
+                if(number == 6);
+                System.out.println("SIX");
+            case 7:
+                if(number == 7);
+                System.out.println("SEVEN");
+            case 8:
+                if(number == 8);
+                System.out.println("EIGHT");
+            case 9:
+                if(number == 9);
+                System.out.println("NINE");
+            case 10:
+                if(number < 0);
+                System.out.println("OTHER");
+                break;
+        }
+    }
+
+    public void isLeapYear(){
+        int temp;
+        boolean isPrime=true;
+        Scanner scan= new Scanner(System.in);
+        System.out.println("Enter any number:");
+        //capture the input in an integer
+        int num=scan.nextInt();
+        scan.close();
+        for(int i=2;i<=num/2;i++) {
+            temp=num%i;
+            if(temp==0) {
+                isPrime=false;
+                break;
+            }
+        }
+        //If isPrime is true then the number is prime else not
+        if(isPrime) {
+            System.out.println(num + " is a Prime Number");
+        }else {
+            System.out.println(num + " is not a Prime Number");
+        }
+
+    }
 
 }
