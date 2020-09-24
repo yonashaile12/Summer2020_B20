@@ -1,8 +1,6 @@
-package day57_Polymorphism;
+package day57_Polymorphism.PhoneTask;
 
-import com.sun.tools.corba.se.idl.constExpr.And;
-
-public class Huawei extends Phone implements AndroidApp,AppleApp,Downloadable{
+public class Huawei extends Phone implements AndroidApp, AppleApp, Downloadable {
 
 
     public Huawei( String model, String size, double price) {

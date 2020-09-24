@@ -1,11 +1,16 @@
-package day57_Polymorphism;
+package day57_Polymorphism.PhoneTask;
+
+import day57_Polymorphism.PhoneTask.AndroidApp;
+import day57_Polymorphism.PhoneTask.Downloadable;
+import day57_Polymorphism.PhoneTask.Phone;
+
 /*
  6. create a class named Samsung that can inherit from AndroidApps and Phone
             actions: texting(), calling(), freezing()
              if the price of Samsung is more than 1200, the system should throw an exception with a message of:
                     Invalid Price, Samsung' price cannot more than 1200
  */
-public class Samsung extends Phone implements Downloadable,AndroidApp{
+public class Samsung extends Phone implements Downloadable, AndroidApp {
 
     public Samsung( String model, String size, double price) {
         super("Samsung", model, size, price);
