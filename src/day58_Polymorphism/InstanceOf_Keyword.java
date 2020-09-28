@@ -1,11 +1,13 @@
 package day58_Polymorphism;
 
 
+import day30_CustomMethods.Recap;
 import day55_Abstraction.ShapeTask.*;
 import day55_Abstraction.ShapeTask.Shape;
 import day58_Polymorphism.AnimalTask.Animal;
 import day58_Polymorphism.AnimalTask.Cat;
 import day58_Polymorphism.AnimalTask.Dog;
+import org.w3c.dom.css.Rect;
 
 public class InstanceOf_Keyword {
 
@@ -46,6 +48,22 @@ public class InstanceOf_Keyword {
         Circle c1 = new Circle(3);
         Circle c2 = new Circle(3);
         System.out.println(equalsShapes(c1,c2));
+        System.out.println( equalsShapes(new Circle(200), new Circle(300)) );
+
+        System.out.println("======================================");
+
+        Rectangle b1 = new Rectangle(3,5);
+        Rectangle b2 = new Rectangle(4,7);
+        System.out.println(equalsShapes(b1,b2)); // false
+
+        System.out.println(equalsShapes(new Rectangle(3,6), new Rectangle(3,6))); //true
+
+        Cylinder a1 = new Cylinder(4,2);
+        Cylinder a2 = new Cylinder(6,4);
+        System.out.println(equalsShapes(a1,a2)); //false
+
+        System.out.println(equalsShapes(new Cylinder(4,6),new Cylinder(4,6))); //true
+
 
     }
     public static void identifyShape(Shape shape){
@@ -64,10 +82,31 @@ public class InstanceOf_Keyword {
 
         boolean bothCircle = shape1 instanceof Circle && shape2 instanceof Circle;
 
+        boolean bothRecatangle = shape1 instanceof Rectangle && shape2 instanceof Rectangle;
+
+        boolean bothCylinder = shape1 instanceof  Cylinder && shape2 instanceof Cylinder;
+
+        if(bothRecatangle){
+            Rectangle r1 = (Rectangle) shape1;
+            Rectangle r2 = (Rectangle) shape2;
+
+            if(r1.width == r2.width && r1.length == r2.length){
+                result = true;
+            }
+        }
+
         if(bothCircle){
             Circle c1 = (Circle)shape1;
             Circle c2 = (Circle)shape2;
             if(c1.radius == c2.radius){
+                result = true;
+            }
+        }
+
+        if(bothCylinder){
+            Cylinder a1 = (Cylinder)shape1;
+            Cylinder a2 = (Cylinder)shape2;
+            if(a1.radius == a2.radius && a1.height == a2.height){
                 result = true;
             }
         }

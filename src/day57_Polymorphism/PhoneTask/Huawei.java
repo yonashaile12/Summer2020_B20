@@ -25,6 +25,11 @@ public class Huawei extends Phone implements AndroidApp, AppleApp, Downloadable 
         System.out.println("Huawei is calling "+phoneNumber);
     }
 
+    public void stealInfo(){
+        System.out.println("Huawei is stealing your info");
+    }
+
+
     @Override
     public String toString() {
         return "Huawei{" +
