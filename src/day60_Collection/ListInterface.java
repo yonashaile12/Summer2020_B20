@@ -1,5 +1,7 @@
 package day60_Collection;
 
+import day54_Abstraction.CarTask.Car;
+
 import java.util.*;
 
 public class ListInterface {
@@ -106,36 +108,46 @@ public class ListInterface {
         //groups.addAll(Arrays.asList(group1,group2,group3,group4,group5));
 
         groups.addAll(Arrays.asList(
-                new ArrayList<>(Arrays.asList("Yonas","Anton","Sergi","Muhammed")),
-                new ArrayList<>(Arrays.asList("Ziidin","Zahara","Dawud","Ramazan")),
-                new ArrayList<>(Arrays.asList("Gelila","Musa","Anna","Zeki")),
-                new ArrayList<>(Arrays.asList("Muthar","Nadir","Saim","Gurham"))
+                new Stack<>(),
+                new Stack<>(),
+                new Stack<>(),
+                new Stack<>(),
+                new Stack<>()
         ));
+
+        groups.get(0).addAll(Arrays.asList("Yonas","Anton","Sergi","Muhammed","Sin"));
+        groups.get(1).addAll(Arrays.asList("Ziidin","Zahara","Dawud","Ramazan","Zeyeneb"));
+        groups.get(2).addAll(Arrays.asList("Gelila","Musa","Anna","Zeki","Cristina"));
+        groups.get(3).addAll(Arrays.asList("Muthar","Nadir","Saim","Gurham","Aalia"));
+        groups.get(4).addAll(Arrays.asList("Ashenafi", "Ali", "Hamid", "Mokinur", "Nikola"));
 
         System.out.println(groups);
 
-        for (List<String> each : groups) {
+        for (List<String> eachGroup : groups) {
+            ((Stack)eachGroup).pop();
+            System.out.println(eachGroup);
+            //for(String eachStudent:eachGroup){
+                System.out.println();
+                //System.out.print(eachStudent+", ");
+            }
+
+
+        List<Car> SUVs = new ArrayList<>();
+        List<Car> sedans = new ArrayList<>();
+        List<Car> truck = new ArrayList<>();
+        List<Car> Converitble = new ArrayList<>();
+
+        List<List<Car>> cars = new ArrayList<>();
+
+
+        /*
+        iterate every single car and print out the:
+            brand : model : price
+        */
+
+
 
         }
 
 
-
-
-
-
-
-
-
-
-    }
-
-
-    public void method1(){
-
-    }
-
-    // vector method synchronized
-    public synchronized void method2(){
-
-    }
 }
