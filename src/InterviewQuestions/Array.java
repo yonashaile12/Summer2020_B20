@@ -42,6 +42,8 @@ public class Array {
        String result  = stringSplosion("code");
         System.out.println(result);
 
+        System.out.println(everyNth("gelila",2));
+
 
     }
 
@@ -88,4 +90,14 @@ public class Array {
         }
         return result;
     }
+
+    public static String everyNth(String str, int n) {
+
+        String result = "";
+        for(int i = 0; i < str.length(); i+= n){
+            result+=str.charAt(i);
+        }
+        return result;
+    }
+
 }
