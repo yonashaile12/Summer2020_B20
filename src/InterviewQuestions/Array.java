@@ -9,10 +9,20 @@ public class Array {
            zeros at the end of array without sorting an array?
          For example: input: [4,5,0,0,2,0,1,0] output: [4,5,2,1,0,0,0,0]*/
 
-        int [] arr = {4,5,0,0,2,0,1,0};   //[4,5,2,1,0,0,0,0]
+        for(int i = 0; i<3; i++) { //0,1,2
+            for (int j = 3; j >= 0; j--) { //3,2,1
+                if (i == j)
+                    continue;
 
-        int count =0;
+                System.out.print(i + "" + j);
 
+            }
+        }
+
+            int[] arr = {4, 5, 0, 0, 2, 0, 1, 0};   //[4,5,2,1,0,0,0,0]
+
+            int count = 0;
+/*
         for(int i=0; i<arr.length; i++) {
             if (arr[i] != 0) {
                 arr[count++] = arr[i];
@@ -43,6 +53,10 @@ public class Array {
         System.out.println(result);
 
         System.out.println(everyNth("gelila",2));
+
+        System.out.println(reverStr("gelila"));
+
+        System.out.println("remoDub(\"gelila\") = " + remoDub("aaaaaabbabbabababdudusx"));
 
 
     }
@@ -90,6 +104,15 @@ public class Array {
         }
         return result;
     }
+    /*
+    Given a non-empty string and an int N, return the string made starting
+    with char 0, and then every Nth char of the string. So if N is 3, use char 0, 3, 6, ...
+     and so on. N is 1 or more.
+        everyNth("Miracle", 2) → "Mrce"
+        everyNth("abcdefg", 2) → "aceg"
+        everyNth("abcdefg", 3) → "adg"
+     */
+        }
 
     public static String everyNth(String str, int n) {
 
@@ -98,6 +121,30 @@ public class Array {
             result+=str.charAt(i);
         }
         return result;
+    }
+    public static String reverStr(String str){
+        //gelila --> alileg
+
+        String result = "";
+
+        for(int i = str.length()-1; i >= 0; i-- ){
+            result += str.charAt(i);
+        }
+
+        return result;
+    }
+
+    public static String remoDub(String str){
+        String nonDup = "";
+        String[] result = str.split("");//[g,e,l,i,l,a]
+
+        for(String each: result){
+            if(!nonDup.contains(each)){
+                nonDup += each;
+            }
+        }
+        return nonDup;
+
     }
 
 }
