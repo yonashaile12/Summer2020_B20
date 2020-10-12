@@ -8,7 +8,10 @@ import java.util.Iterator;
 import java.util.List;
 
 public class RemovePalindrome {
-
+/*
+  1. write a program that can remove the palindrome string from a list of String
+            DO NOT use Lambda expressions
+ */
     public static void main(String[] args) {
         String[] words = {"Java","Python","Level","Kayak","Cybertek","Zaman","Ana","Batch20"};
 
