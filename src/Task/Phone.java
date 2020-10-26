@@ -22,4 +22,8 @@ public abstract class Phone extends Device{
     public abstract void call(long phoneNumber);
     public abstract void text(long phoneNumber);
     public abstract boolean equal(Device device);
+
+    public static void main(String[] args) {
+
+    }
 }
