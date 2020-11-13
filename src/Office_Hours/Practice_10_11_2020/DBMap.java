@@ -1,5 +1,8 @@
 package Office_Hours.Practice_10_11_2020;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class DBMap {
 
 
@@ -26,4 +29,18 @@ public class DBMap {
 
 
      */
+
+    public static void main(String[] args) {
+        List<String> books = new ArrayList<>();
+        books.add("harry potter");
+        books.add("The last Samurai");
+        books.add("Game of thrones");
+        books.add("the last day of Kelly");
+        for(String each: books){
+
+        }
+
+        double pie = Math.PI;
+    }
+
 }

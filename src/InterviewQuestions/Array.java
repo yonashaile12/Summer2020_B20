@@ -18,6 +18,9 @@ public class Array {
 
             }
         }
+        int[] arr1 = {4,5,6};
+        System.out.println(maxEnd3(arr1));
+
 
             int[] arr = {4, 5, 0, 0, 2, 0, 1, 0};   //[4,5,2,1,0,0,0,0]
 
@@ -146,5 +149,19 @@ public class Array {
         return nonDup;
 
     }
+
+    public static int[] maxEnd3(int[] nums) {
+
+        int max = Integer.MIN_VALUE;
+        for(int each: nums){
+            if(each > max){
+               max = each;
+            }
+        }
+        int[] arr = {max, max, max};
+
+        return arr;
+    }
+
 
 }
