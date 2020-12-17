@@ -1,5 +1,8 @@
 package Quiz4;
 
+import java.util.HashMap;
+import java.util.Map;
+
 public class count {
 
     public static int countYZ(String str) {
