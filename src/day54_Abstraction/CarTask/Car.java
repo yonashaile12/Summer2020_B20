@@ -26,14 +26,4 @@ public abstract class Car { // Can not be final
 
 }
 
-final class A{
-
-} // you can have a final class but abstract can not be final
-class B{
-    public static void main(String[] args) {
-        A obj1 = new A();
         //Car obj2 = new Car(); // not concrete class(cannot create object, object MUST be Concrete)
-
-
-    }
-}
