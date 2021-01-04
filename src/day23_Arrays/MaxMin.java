@@ -9,7 +9,7 @@ public class MaxMin {
 
         for(int i = 1; i <= arr.length-1; i++){
 
-            if(arr[i] > max){ // compares the array' elemnts, and assign the maximum number to variable max
+            if(arr[i] > max){ // compares the array' elements, and assign the maximum number to variable max
                 max = arr[i];
             }
 

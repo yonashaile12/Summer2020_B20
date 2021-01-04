@@ -1,11 +1,12 @@
 package day24_Arrays;
 
+import java.util.List;
+
 public class UniqueNumbers {
 
     public static void main(String[] args) {
         int[] arr = {1,1,2,3,3,4,5,5,6,7,7,8,9,9};
         //{1,1,2,3,3
-
         for(int j=0; j <= arr.length-1; j++){
                 // j: 0,1,2,3,4
             int num1 = arr[j];  //1  1  2  3  3
