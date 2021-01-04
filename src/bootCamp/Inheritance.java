@@ -1,11 +1,18 @@
 package bootCamp;
 
-class Shape{
+interface Volume{
+
+     int a = 100; // variables are public static final in interface
+    // you can't have static block instance variable, constructors
+    double volume();
+}
+
+abstract class Shape{
     public String name;
 
-    protected double area(){
-        return 0;
-    }
+    protected abstract double area();
+
+
 }
 
 class Rectangle extends Shape{
@@ -14,6 +21,8 @@ class Rectangle extends Shape{
     public double area(){
         return length * width;
     }
+
+
 }
 
 class Circle extends Shape{
@@ -23,6 +32,22 @@ class Circle extends Shape{
         return r * r * Math.PI;
     }
 
+
+
+}
+
+final class Cube extends Shape implements Volume{
+
+    @Override
+    protected double area() {
+        return 0;
+    }
+
+
+    @Override
+    public double volume() {
+        return 0;
+    }
 }
 
 public class Inheritance {
@@ -36,5 +61,7 @@ public class Inheritance {
         rectangle.length = 4;
         rectangle.width = 3;
         System.out.println(rectangle.area());
+
+        System.out.println(Volume.a);
     }
 }
