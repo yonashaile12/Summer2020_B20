@@ -17,7 +17,7 @@ abstract class Shape{
 
 class Rectangle extends Shape{
     public double length, width;
-    @Override
+
     public double area(){
         return length * width;
     }
@@ -27,7 +27,7 @@ class Rectangle extends Shape{
 
 class Circle extends Shape{
     public double r;
-    @Override
+
     public double area(){
         return r * r * Math.PI;
     }
@@ -36,9 +36,9 @@ class Circle extends Shape{
 
 }
 
-final class Cube extends Shape implements Volume{
+final class Cube implements Volume{
 
-    @Override
+
     protected double area() {
         return 0;
     }

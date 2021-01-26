@@ -1,6 +1,6 @@
 package day56_Abstraction.AnimalTask;
 
-public class Eagle extends Animal implements Flyable{
+public class Eagle extends Animal implements Flyable {
     @Override
     public void eat() {
         System.out.println("Eagle is eating");
@@ -12,12 +12,8 @@ public class Eagle extends Animal implements Flyable{
     }
 
     @Override
-    public void drink() {
-        System.out.println("Eagle is drinking");
-    }
-
-    @Override
     public void fly() {
         System.out.println("Eagle is flying");
     }
 }
+

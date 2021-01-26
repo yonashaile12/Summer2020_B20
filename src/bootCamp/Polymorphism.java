@@ -19,7 +19,7 @@ public class Polymorphism {
         ((JavaScriptExecutor)driver).executeScript()
          */
 
-        Shape shape2 = new Cube();
+
 
         //System.out.println(shape2.length);
 

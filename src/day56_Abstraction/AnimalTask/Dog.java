@@ -1,6 +1,6 @@
 package day56_Abstraction.AnimalTask;
 
-public class Dog extends Animal implements Playable,Swimmable{
+public class Dog extends Animal implements Playable, Swimmable{
     @Override
     public void eat() {
         System.out.println("Dog is eating");
@@ -11,7 +11,7 @@ public class Dog extends Animal implements Playable,Swimmable{
         System.out.println("Dog is sleeping");
     }
 
-    @Override
+
     public void drink() {
         System.out.println("Dog is drinking water");
     }

@@ -1,6 +1,6 @@
 package day56_Abstraction.AnimalTask;
 
-public interface Swimmable { // only for animals that can sim
+public interface Swimmable {
 
     public abstract void swim();
 

@@ -11,7 +11,7 @@ public class Cat extends Animal implements Playable{
         System.out.println("Cat is sleeping");
     }
 
-    @Override
+
     public void drink() {
         System.out.println("Cat is drinking Milk");
     }

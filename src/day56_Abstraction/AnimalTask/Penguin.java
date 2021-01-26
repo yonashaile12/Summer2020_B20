@@ -1,6 +1,8 @@
 package day56_Abstraction.AnimalTask;
 
-public class Penguin extends Animal implements Swimmable, Playable{
+public class Penguin extends Animal implements Swimmable, Playable {
+
+
     @Override
     public void eat() {
         System.out.println("Penguin is eating");
@@ -12,11 +14,6 @@ public class Penguin extends Animal implements Swimmable, Playable{
     }
 
     @Override
-    public void drink() {
-        System.out.println("Penguin is drinking");
-    }
-
-    @Override
     public void play() {
         System.out.println("Penguin is playing");
     }
@@ -25,4 +22,5 @@ public class Penguin extends Animal implements Swimmable, Playable{
     public void swim() {
         System.out.println("Penguin is swimming");
     }
+
 }

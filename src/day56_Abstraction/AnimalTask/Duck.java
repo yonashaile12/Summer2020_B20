@@ -1,6 +1,8 @@
 package day56_Abstraction.AnimalTask;
 
-public class Duck extends Animal implements Swimmable,Playable,Flyable{
+public class Duck extends Animal implements Swimmable, Flyable, Playable {
+
+
     @Override
     public void eat() {
         System.out.println("Duck is eating");
@@ -12,8 +14,8 @@ public class Duck extends Animal implements Swimmable,Playable,Flyable{
     }
 
     @Override
-    public void drink() {
-        System.out.println("Duck is drinking");
+    public void swim() {
+        System.out.println("Duck is swimming");
     }
 
     @Override
@@ -26,8 +28,6 @@ public class Duck extends Animal implements Swimmable,Playable,Flyable{
         System.out.println("Duck is playing");
     }
 
-    @Override
-    public void swim() {
-        System.out.println("Duck is swimming");
-    }
+
+
 }
