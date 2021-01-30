@@ -10,7 +10,7 @@ package day22_NestedLoop;
 
 import java.util.Scanner;
 
-public class OccurancesOfChar {
+public class OccurrencesOfChar {
 
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);

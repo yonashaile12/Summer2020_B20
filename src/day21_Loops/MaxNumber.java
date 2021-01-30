@@ -8,7 +8,7 @@ public class MaxNumber {
      public static void main(String[] args) {
          Scanner scan = new Scanner(System.in);
 
-         int max  = -2147483648;  // -100
+         int max  = Integer.MIN_VALUE;  // -100
 
         for(int i = 10; i <= 50; i += 10) {
 

@@ -19,7 +19,7 @@ public class FizzBuzz {
         System.out.println("enter your second word");
         String word2 = scan.next();
 
-        boolean result = word1.length() ==5  && word2.length() ==5;
+        boolean result = word1.length() == 5  && word2.length() == 5;
 
         /*
 

@@ -14,7 +14,6 @@ public class BalanceBrackets {
         System.out.println(isBalanced("({})"));
     }
     public static boolean isBalanced(String str){
-
         String open = "{[(";
         Stack<Character> stack = new Stack<>();
         Map<Character, Character> map = new HashMap<>();
@@ -45,4 +44,6 @@ public class BalanceBrackets {
         return stack.isEmpty();
 
     }
+
+
 }

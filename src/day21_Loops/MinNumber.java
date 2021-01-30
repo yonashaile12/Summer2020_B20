@@ -6,7 +6,7 @@ public class MinNumber {
 
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
-        int min = 2147483647; //3
+        int min = Integer.MAX_VALUE; //3
 
         for(int i =1; i <= 10; i++){
 

@@ -7,8 +7,8 @@ public class MinAndMax {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
 
-        int max = -2147483648; // any user entered input WILL BE greater than  -999999999
-        int min = 2147483647; // any user entered input WILL BE less than  999999999
+        int max = Integer.MIN_VALUE; // any user entered input WILL BE greater than  -999999999
+        int min = Integer.MAX_VALUE; // any user entered input WILL BE less than  999999999
 
         for(int i=1; i<= 5; i++){
 
