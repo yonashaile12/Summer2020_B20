@@ -1,4 +1,4 @@
-package InterviewQuestions;
+package InterviewQuestions.codingBat;
 
 import java.util.Arrays;
 import java.util.HashMap;
@@ -19,6 +19,7 @@ public class MapPractice {
         System.out.println(reverseNo(345));
 
         System.out.println(factorialWithRecursion(13));
+        swap(123, 453);
 
     }
 
@@ -62,20 +63,13 @@ public class MapPractice {
     }
 
     private static void swap(int x, int y) {
-        System.out.println("values before swap:" + x + " and " + y);
-        // swap logic
-        x = x + y; // 3 +  4 = 7 == x
-        y = x - y; // 7 - 4 = 3 == y
-        x = x - y; // 7 - 3 = 4 == 4
-        /*
-        let say x = 3 and y = 4
-        x = 3 + 4 == 7
-        y = 7 - 4 == 3
-        x = 7 - 3 == 4
-        x == 4
-        y == 3
-         */
-        System.out.println("values after swap:" + x + " and " + y);
+        System.out.println("values before swap: " + x + " and " + y);
+        // swap logic x = 123 y = 453
+        x = x + y; // 123  +  453 = 576  ==  x
+        y = x - y; // 576  -  453 = 123  ==  y
+        x = x - y; // 576  -  123 = 453  ==  x
+
+        System.out.println("values after swap: " + x + " and " + y);
     }
 
     public static int reverseNo(int number) {
@@ -91,14 +85,14 @@ public class MapPractice {
     // with loop
     public static long factorialWithLoop(int n) {
         if(n < 0) {
-            System.out.println("Negative nos can't have factorial");
+            System.out.println("Negative numbers can't have factorial");
             return -9999;
         }
-        long fact = 1;
+        long factorial = 1;
         for (int i = 2; i <= n; i++) {
-            fact = fact * i;
+            factorial = factorial * i;
         }
-        return fact;
+        return factorial;
     }
     // Factorial numbers with recursive calling method inside a method
     public static long factorialWithRecursion(int n) {

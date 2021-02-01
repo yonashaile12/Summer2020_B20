@@ -1,4 +1,4 @@
-package InterviewQuestions;
+package InterviewQuestions.codingBat;
 
 public class OCAPractice {
 

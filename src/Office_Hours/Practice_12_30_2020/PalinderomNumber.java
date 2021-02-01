@@ -1,9 +1,5 @@
 package Office_Hours.Practice_12_30_2020;
 
-import InterviewQuestions.Array;
-
-import java.util.ArrayList;
-
 public class PalinderomNumber {
     public static void main(String[] args) {
         System.out.println(isNumberPalindrome(123));
