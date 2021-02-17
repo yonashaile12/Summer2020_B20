@@ -11,8 +11,8 @@ public class TableSort {
      */
 
     public static void main(String[] args) {
-        String s = "java";
-        String s2 = "zpple";
+        String s = "java"; // 72
+        String s2 = "zpple"; //78
         System.out.println(s.compareTo(s2));
 
         Set<String> set = new LinkedHashSet<>(Arrays.asList( "abc","banana", "java", "zebra"));

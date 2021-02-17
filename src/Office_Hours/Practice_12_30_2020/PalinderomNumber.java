@@ -486,13 +486,9 @@ public class PalinderomNumber {
 
         }
 
+
+
         return arr;
 
     }
-
-
-
-
-
-
 }

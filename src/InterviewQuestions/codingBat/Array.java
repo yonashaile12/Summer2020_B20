@@ -147,7 +147,6 @@ public class Array {
             }
         }
         return nonDup;
-
     }
 
     public static int[] maxEnd3(int[] nums) {
