@@ -1,5 +1,6 @@
 package InterviewQuestions.SelfPractcice;
 
+import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -11,6 +12,9 @@ public class Ch02TwoSum {
 
         int[] result = getTwoSum(numbers, target);
         System.out.println(result[0]+" "+result[1]);
+
+        System.out.println(isOdd(new int[]{-1,1}));
+
     }
 
     public static int[] getTwoSum(int[] numbers, int target){
@@ -24,4 +28,26 @@ public class Ch02TwoSum {
         }
         return new int [] {-1, -1};
     }
+
+    public static boolean isOdd(int[] num) {
+        Map<Integer, Integer> odd = new HashMap<>();
+        Map<Integer, Integer> even = new HashMap<>();
+        boolean isEqual = false;
+        for(int i = 0; i< num.length; i++){
+            if(num[i] % 2 != 0){
+               odd.put(i,1);
+            }else if(num[i] % 2 == 0){
+                even.put(i, 1);
+            }
+        }
+        System.out.println(odd);
+        System.out.println(even);
+        if(odd.size() == even.size()){
+            isEqual=true;
+        }
+
+
+        return isEqual;
+    }
+
 }
